@@ -6,7 +6,7 @@ script:
   - docker build -t acherbas/node .
   - docker images acherbas/node
 
-before-deploy:
+before_deploy:
   - docker login -u macrosol -p Neptune1974
 
 deploy:
