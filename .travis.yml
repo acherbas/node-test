@@ -11,6 +11,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push acherbas/node-test
+  script: docker push acherbas/node
   on:
     branch: main
