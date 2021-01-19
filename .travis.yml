@@ -3,14 +3,14 @@ services:
   - docker
 
 script:
-  - docker build -t acherbas/node .
-  - docker images acherbas/node
+  - docker build -t macrosol/node-test .
+  - docker images macrosol/node-test
 
 before_deploy:
   - docker login -u macrosol -p Neptune1974
 
 deploy:
   provider: script
-  script: docker push acherbas/node
+  script: docker push macrosol/node-test
   on:
     branch: main
